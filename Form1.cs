@@ -25,6 +25,7 @@ namespace project_demo
                 Username = userName,
                 Password = password
             };
+            Console.WriteLine("Hello");
 
             HotelDBContext.Users.Add(newUser);
 
