@@ -1,6 +1,6 @@
 ﻿namespace project_demo
 {
-    partial class Form1
+    partial class Hotel_form
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,106 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            user_name_txtbox = new TextBox();
+            password_txtbox = new TextBox();
+            login_btn = new Button();
+            register_btn = new Button();
+            username_label = new Label();
+            password_label = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // user_name_txtbox
             // 
-            textBox1.Location = new Point(12, 60);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(442, 23);
-            textBox1.TabIndex = 0;
+            user_name_txtbox.Location = new Point(12, 60);
+            user_name_txtbox.Name = "user_name_txtbox";
+            user_name_txtbox.Size = new Size(442, 23);
+            user_name_txtbox.TabIndex = 0;
             // 
-            // textBox2
+            // password_txtbox
             // 
-            textBox2.Location = new Point(12, 121);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(442, 23);
-            textBox2.TabIndex = 1;
+            password_txtbox.Location = new Point(12, 121);
+            password_txtbox.Name = "password_txtbox";
+            password_txtbox.Size = new Size(442, 23);
+            password_txtbox.TabIndex = 1;
             // 
-            // button1
+            // login_btn
             // 
-            button1.Location = new Point(379, 298);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "login";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            login_btn.Location = new Point(379, 298);
+            login_btn.Name = "login_btn";
+            login_btn.Size = new Size(75, 23);
+            login_btn.TabIndex = 2;
+            login_btn.Text = "login";
+            login_btn.UseVisualStyleBackColor = true;
+            login_btn.Click += login;
             // 
-            // button2
+            // register_btn
             // 
-            button2.Location = new Point(263, 298);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 3;
-            button2.Text = "register";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            register_btn.Location = new Point(263, 298);
+            register_btn.Name = "register_btn";
+            register_btn.Size = new Size(75, 23);
+            register_btn.TabIndex = 3;
+            register_btn.Text = "register";
+            register_btn.UseVisualStyleBackColor = true;
+            register_btn.Click += register;
             // 
-            // label1
+            // username_label
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(59, 15);
-            label1.TabIndex = 4;
-            label1.Text = "username";
-            label1.Click += label1_Click;
+            username_label.AutoSize = true;
+            username_label.Location = new Point(12, 42);
+            username_label.Name = "username_label";
+            username_label.Size = new Size(59, 15);
+            username_label.TabIndex = 4;
+            username_label.Text = "username";
             // 
-            // label2
+            // password_label
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 103);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 15);
-            label2.TabIndex = 5;
-            label2.Text = "Password";
+            password_label.AutoSize = true;
+            password_label.Location = new Point(12, 103);
+            password_label.Name = "password_label";
+            password_label.Size = new Size(57, 15);
+            password_label.TabIndex = 5;
+            password_label.Text = "Password";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.Red;
-            label3.Location = new Point(10, 213);
-            label3.Name = "label3";
-            label3.Size = new Size(59, 15);
-            label3.TabIndex = 6;
-            label3.Text = "username";
-            label3.Visible = false;
-            // 
-            // Form1
+            // Hotel_form
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            ForeColor = Color.Red;
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(password_label);
+            Controls.Add(username_label);
+            Controls.Add(register_btn);
+            Controls.Add(login_btn);
+            Controls.Add(password_txtbox);
+            Controls.Add(user_name_txtbox);
+            ForeColor = Color.Black;
+            Name = "Hotel_form";
+            Text = "Hotel Form";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private TextBox user_name_txtbox;
+        private TextBox password_txtbox;
+        private Button login_btn;
+        private Button register_btn;
+        private Label username_label;
+        private Label password_label;
     }
 }
